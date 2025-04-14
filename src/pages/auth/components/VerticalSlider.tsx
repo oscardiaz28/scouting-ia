@@ -7,9 +7,9 @@ export const VerticalSlider = () => {
 
   const columns: string[][] = [
     ["/images/image1.jpg", "/images/image2.avif", "/images/image3.avif"],
-    ["/images/image1.jpg", "/images/image2.avif", "/images/image3.avif"],
-    ["/images/image1.jpg", "/images/image2.avif", "/images/image3.avif"],
-    ["/images/image1.jpg", "/images/image2.avif", "/images/image3.avif"],
+    ["/images/image3.avif", "/images/image1.jpg", "/images/image2.avif"],
+    ["/images/image2.avif", "/images/image3.avif", "/images/image1.jpg"],
+    ["/images/image4.avif", "/images/image3.avif", "/images/image2.avif"],
   ]
 
   useEffect(() => {
