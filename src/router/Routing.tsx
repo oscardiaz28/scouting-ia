@@ -5,6 +5,12 @@ import { SignupPage } from "../pages/auth/SignupPage"
 import { PrivateLayout } from "../layout/PrivateLayout"
 import { DashboardPage } from "../pages/dashboard/DashboardPage"
 import { SidebarProvider } from "../context/SidebarProvider"
+import { VideoPage } from "../pages/video/VideoPage"
+import { VideoAnalysis } from "../pages/video/VideoAnalysis"
+import StatsPage from "../pages/stats/StatsPage"
+import PlayersPage  from "../pages/players/PlayersPage"
+import { PlayerDetailPage } from "../pages/players/PlayerDetailPage"
+import { AssistantPage } from "../pages/assitant/AssistantPage"
 
 export const Routing = () => {
     return (
@@ -18,7 +24,12 @@ export const Routing = () => {
 
                     <Route path="/dashboard" element={ <PrivateLayout /> }>
                         <Route index element={ <DashboardPage /> } />    
-                        <Route path="videos" element={<div>Videos</div>} />
+                        <Route path="videos" element={ <VideoPage /> } />
+                        <Route path="videos/:id" element={<VideoAnalysis />} />
+                        <Route path="stats" element={<StatsPage />} />
+                        <Route path="players" element={<PlayersPage />} />
+                        <Route path="players/:id" element={<PlayerDetailPage />} />
+                        <Route path="assistant" element={<AssistantPage />} />
                     </Route>
                 </Routes>      
             </SidebarProvider>  

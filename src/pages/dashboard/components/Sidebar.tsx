@@ -3,6 +3,7 @@ import { Logo } from "../../../components/common/Logo"
 import { Link, useLocation } from "react-router-dom"
 import { ChartBarIcon, ChevronRight, Home, MessageCircle, Settings, User, Video, X } from "lucide-react"
 import { useSidebarState } from "../../../context/SidebarProvider"
+import { isPathActive } from "../../../utils/utils"
 
 interface Props{
     showSidebar: boolean,
@@ -36,13 +37,13 @@ const sidebarItems = [
     {
         id: "estadisticas",
         label: "Estadisticas",
-        path: "/dashboard/statics",
+        path: "/dashboard/stats",
         icon: <ChartBarIcon className="w-4 h-4 text-gray-200" />
     },
     {
         id: "ia",
         label: "IA",
-        path: "/dashboard/ia",
+        path: "/dashboard/assistant",
         icon: <MessageCircle className="w-4 h-4 text-gray-200" />
     }
 ]
@@ -64,7 +65,7 @@ const MobileNavbar = ( ) => {
     const {showMenu, setShowMenu} = useSidebarState()
 
     return (
-        <div className={`bg-[#1A1C1E] border-r border-gray-800 transition-all duration-400 overflow-hidden fixed top-0 left-0 h-full ${showMenu ? "w-64" : "w-0"} md:hidden md:w-0`}>
+        <div className={`bg-[#141516] sahdow-md border-r border-gray-800 transition-all duration-400 overflow-hidden fixed top-0 left-0 h-full ${showMenu ? "w-64" : "w-0"} md:hidden md:w-0 z-50`}>
             <div className="p-4 px-5">
                 <div className="flex items-center justify-between">
                     <Logo />
@@ -76,7 +77,7 @@ const MobileNavbar = ( ) => {
                 <div className="flex flex-col gap-4 mt-9">
 
                     {sidebarItems.map( item => (
-                        <Link key={item.id} to={item.path}  className={`${pathname == item.path ? "bg-[#272A30]" : ""} rounded-full p-2 px-4`} >
+                        <Link key={item.id} to={item.path}  className={`${ isPathActive(pathname, item.path) ? "bg-[#272A30]" : ""} rounded-full p-2 px-4`} >
                             <div className="flex items-center gap-3">
                                 {item.icon}
                                 <p className="text-gray-200 text-sm font-semibold">{item.label}</p>
@@ -109,13 +110,13 @@ const DesktopNavbar = ( {showSidebar, setShowSidebar} : DesktopProps ) => {
     })
 
     return (
-        <div className={`${showSidebar ? "w-64" : "w-0" } bg-[#1A1C1E] border-r border-gray-800 transition-all duration-400 overflow-hidden hidden md:block`}>
+        <div className={`${showSidebar ? "w-64" : "w-0" } bg-[#1A1C1E] border-r border-gray-800 transition-all duration-400 overflow-hidden hidden md:block `}>
             <div className="p-4 px-5">
                 <Logo />
                 <div className="flex flex-col gap-4 mt-9">
 
                     {sidebarItems.map( item => (
-                        <Link key={item.id} to={item.path}  className={`${pathname == item.path ? "bg-[#272A30]" : ""} rounded-full p-2 px-4`} >
+                        <Link key={item.id} to={item.path}  className={`${ isPathActive(pathname, item.path) ? "bg-[#272A30]" : ""} rounded-full p-2 px-4`} >
                             <div className="flex items-center gap-3">
                                 {item.icon}
                                 <p className="text-gray-200 text-sm font-semibold">{item.label}</p>
