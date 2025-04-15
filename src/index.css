@@ -66,8 +66,6 @@ body {
     --s: -1;
 }
 
-@keyframes l2 {
-    100% {
-        transform: rotate(calc(var(--s, 1)*1turn))
-    }
+.assistant-div{
+    height: calc(100vh - 85px);
 }

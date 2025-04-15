@@ -3,33 +3,33 @@ import { ChartNoAxesColumn, Clock, Heart, Search, Video, Zap } from 'lucide-reac
 const cards = [
     {
         icon: <Search className='w-7 h-7 text-[#2585FE]' />,
-        title: "Content Recognition",
-        subtitle: "Identify objects, scenes, people, and text within your videos with precise timestamps."
+        title: "Reconocimiento Táctico",
+        subtitle: "Identifica formaciones, roles y jugadas clave en tus videos con marcas de tiempo precisas."
     },
     {
         icon: <ChartNoAxesColumn className='w-7 h-7 text-[#2585FE]' />,
-        title: "Engagement Analytics",
-        subtitle: "Track viewer retention, engagement markers, and predict content performance."
+        title: "Análisis de Rendimiento",
+        subtitle: "Mide estadísticas, recorridos y acciones para predecir el rendimiento de cada jugador."
     },
     {
         icon: <Heart className='w-7 h-7 text-[#2585FE]' />,
-        title: "Sentiment Analysis",
-        subtitle: "Measure emotional impact and audience sentiment throughout your video content."
+        title: "Detección de Ritmo",
+        subtitle: "Mide el impacto emocional y el cambio de ritmo del partido mediante gestos de jugadores"
     },
     {
         icon: <Clock className='w-7 h-7 text-[#2585FE]' />,
-        title: "Key Moment Detection",
-        subtitle: "Automatically identify the most impactful moments in your videos for highlights and clips."
+        title: "Detección de Jugadas Clave",
+        subtitle: "Identifica automáticamente goles, asistencias, faltas, atajadas y momentos decisivos, gracias al análisis contextual de video."
     },
     {
         icon: <Zap className='w-7 h-7 text-[#2585FE]' />,
-        title: "Optimization Suggestions",
-        subtitle: "Get AI-powered recommendations to improve your video's performance and reach."
+        title: "Sugerencias de Mejora",
+        subtitle: "Recibe recomendaciones impulsadas por IA para optimizar el rendimiento del jugador"
     },
     {
         icon: <Video className='w-7 h-7 text-[#2585FE]' />,
-        title: "Trend Analysis",
-        subtitle: "Stay ahead with insights on trending topics related to your video content."
+        title: "Análisis de Tendencias",
+        subtitle: "Recibe información de las tendencias de los jugadores."
     }
 ]
 
@@ -43,8 +43,10 @@ export const Features = () => {
             <div className="max-w-[1300px] mx-auto px-4 flex flex-col gap-20">
 
                 <div className="text-center">
-                    <h1 className="text-4xl md:text-[45px] font-bold text-gray-200">Powerful AI Video Analysis</h1>
-                    <p className="text-lg md:text-xl font-semibold text-gray-400 mt-6 max-w-3xl mx-auto">Our advanced AI scans every frame to extract actionable insights and detailed analytics about your content.
+                    <h1 className="text-4xl md:text-[45px] font-bold text-gray-200">
+                        Análisis Deportivo con IA Avanzada</h1>
+                    <p className="text-lg md:text-xl font-semibold text-gray-400 mt-6 max-w-3xl mx-auto">
+                    Nuestra inteligencia artificial analiza cada cuadro del video para extraer información táctica, rendimiento individual y estadísticas precisas sobre tus partidos.
                     </p>
                 </div>
 

@@ -38,7 +38,7 @@ export const UploadVideo = ( {trigger} : Props ) => {
                             <Upload className="w-5 h-5" />
                             <span className="text-lg font-semibold">Analizar Video</span>
                         </h2>
-                        <p className="text-sm text-gray-400 mt-1">Upload your video content for intelligent analysis</p>
+                        <p className="text-sm text-gray-400 mt-1">Sube tu contenido de vídeo para un análisis inteligente</p>
                     </div>
 
                     <div className="">
@@ -102,14 +102,14 @@ export const UploadVideo = ( {trigger} : Props ) => {
                         <Upload className="w-5 h-5" />
                         <span className="text-lg font-semibold">Analizar Video</span>
                     </h2>
-                    <p className="text-sm text-gray-400 mt-1">Upload your video content for intelligent analysis</p>
+                    <p className="text-sm text-gray-400 mt-1">Sube tu contenido de vídeo para un análisis inteligente</p>
                 </div>
 
                 <div className="min-h-[200px] flex items-center justify-center">
                     <div className="text-center flex flex-col items-center max-w-xs">
                         <div className="loader"></div>
                         <h3 className="text-lg font-bold mb-3">Analizando tu Video</h3>
-                        <p className="text-gray-400 text-sm">Our IA is processing your video to extract valuable insights. This may take a moment</p>
+                        <p className="text-gray-400 text-sm">Nuestra IA está procesando tu video para extraer información valiosa. Esto puede tardar un momento.</p>
                     </div>
                 </div>
 

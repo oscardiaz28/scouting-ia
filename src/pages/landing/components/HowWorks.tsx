@@ -3,18 +3,18 @@ import { ChartNoAxesColumn, Cpu, Upload } from "lucide-react"
 const steps = [
     {
         icon: <Upload className="text-emerald-400 w-9 h-9" />,
-        title: "Upload Your Video",
-        subtitle: "Simply drag and drop or select your video file. We support all major formats and resolutions."
+        title: "Sube tu video",
+        subtitle: "Simplemente arrastra y suelta o selecciona tu archivo de video."
     },
     {
         icon: <Cpu className="text-emerald-400 w-9 h-9" />,
-        title: "AI Processing",
-        subtitle: "Simply drag and drop or select your video file. We support all major formats and resolutions."
+        title: "Procesamiento de IA",
+        subtitle: "La IA analiza tu video cuadro por cuadro para extraer datos relevantes en segundos."
     },
     {
         icon: <ChartNoAxesColumn className="text-emerald-400 w-9 h-9" />,
-        title: "Generate Insights",
-        subtitle: "View comprehensive analytics and visualizations about your video's content and performance."
+        title: "Genera Estadísticas",
+        subtitle: "Obtén visualizaciones detalladas sobre el rendimiento y contenido de tu video."
     }
 ]
 
@@ -29,11 +29,13 @@ export const HowWorks = () => {
         <div className='max-w-[1300px] mx-auto px-4 flex flex-col gap-20'>
 
             <div className='text-center'>
-                <h1 className="text-4xl md:text-[45px] font-bold text-gray-200">How it Works</h1>
-                <p className="text-lg md:text-xl font-semibold text-gray-400 mt-6 md:mt-4 max-w-3xl mx-auto">Get started in minutes with our simple four-step process.</p>
+                <h1 className="text-4xl md:text-[45px] font-bold text-gray-200">¿Cómo funciona?</h1>
+                <p className="text-lg md:text-xl font-semibold text-gray-400 mt-6 md:mt-4 max-w-3xl mx-auto">
+                    Comience en minutos con nuestro sencillo proceso de tres pasos.
+                </p>
             </div>
 
-            <div className="flex flex-col gap-10 md:flex-row">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
                 {
                     steps.map( (step, idx) => (
                         <div key={idx} className="flex flex-col gap-6 justify-center items-center">

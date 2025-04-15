@@ -13,7 +13,7 @@ export const VerticalSlider = () => {
   ]
 
   useEffect(() => {
-    const speeds = [12, 1, 12]; //pixeles por frame
+    const speeds = [8, 1, 8]; //pixeles por frame
   
     const intervals = refs.current.map((ref, index) => {
       return setInterval(() => {
@@ -28,7 +28,6 @@ export const VerticalSlider = () => {
   
     return () => intervals.forEach(clearInterval);
   }, []);
-  
 
 
   return (

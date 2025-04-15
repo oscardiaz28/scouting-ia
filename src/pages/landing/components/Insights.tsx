@@ -71,16 +71,16 @@ export const Insights = () => {
           <div className="max-w-7xl mx-auto relative z-10">
 
             <div className="text-center mb-20">
-              <h2 className="text-3xl md:text-5xl font-bold mb-4 text-gradient">Visualize Your Video Data</h2>
+              <h2 className="text-3xl md:text-5xl font-bold mb-4 text-gradient">Visualice sus Datos de Vídeo</h2>
               <p className="text-xl text-white/70 max-w-3xl mx-auto">
-                Our AI transforms complex video analysis into clear, actionable data visualizations.
+                Nuestra IA transforma el análisis de video complejo en visualizaciones de datos claras y prácticas.
               </p>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
               {/* Radar Chart */}
               <div className="p-6 h-[400px]">
-                <h3 className="text-xl font-bold mb-4 text-white">Sentiment Analysis Over Time</h3>
+                <h3 className="text-xl font-bold mb-4 text-white text-center">Estadisticas del Jugador</h3>
                 <ResponsiveContainer width="100%" height="100%">
                   <RadarChart cx="50%" cy="50%" outerRadius="80%" data={demoData.habilidades}>
                     <PolarGrid />
@@ -93,7 +93,7 @@ export const Insights = () => {
               
               {/* Object Detection Chart */}
               <div className="glass-card rounded-xl p-6 h-[400px]">
-                <h3 className="text-xl font-bold mb-4 text-white">Object Detection Analysis</h3>
+                <h3 className="text-xl font-bold mb-4 text-white text-center">Jugadas Destacadas</h3>
                 <ResponsiveContainer width="100%" height="85%">
                   <PieChart>
                     <Pie

@@ -10,7 +10,7 @@ import { VideoAnalysis } from "../pages/video/VideoAnalysis"
 import StatsPage from "../pages/stats/StatsPage"
 import PlayersPage  from "../pages/players/PlayersPage"
 import { PlayerDetailPage } from "../pages/players/PlayerDetailPage"
-import { AssistantPage } from "../pages/assitant/AssistantPage"
+import { AssistantPage } from "../pages/assistant/AssistantPage"
 
 export const Routing = () => {
     return (
